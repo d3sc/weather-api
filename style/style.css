@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+nav {
+  text-align: center;
+  background-color: #18191a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.judul {
+  color: #ddd;
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-left: 15px;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li a {
+  align-items: center;
+  padding-right: 30px;
+  text-decoration: none;
+  color: #ddd;
+}
+
+.app {
+  background-image: url(../img/weather-hot.jpg);
+  background-position: 50% 35%;
+  width: 100%;
+  height: 1000px;
+  display: grid;
+  gap: 1px;
+  text-align: center;
+  align-items: center;
+  grid-template-rows: 150px 600px;
+}
+
+.input-box {
+  padding-top: 20px;
+}
+
+#find {
+  cursor: pointer;
+}
+
+#keyword {
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+}
+
+/* .set {
+  display: inline-block;
+} */
+#output {
+  /* margin-top: 40px; */
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 90%;
+  max-width: 440px;
+  color: #333;
+  text-align: center;
+  padding: 50px 35px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px 0 rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+#location {
+  font-size: 1.2em;
+}
+
+.menu-box {
+  padding: 20px;
+  /* display: inline-block; */
+}
+
+#view-button {
+  opacity: 0.7;
+  width: 80px;
+}
+
+#view-more {
+  margin-top: 20px;
+  display: none;
+  text-align: start;
+}
+
+#view-more.view-more-dblock {
+  display: block;
+}
+
+#degree {
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+@media (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+  nav .judul {
+    font-size: 1.3em;
+  }
+  nav .nav-links a {
+    padding: 0;
+    display: none;
+  }
+  .app {
+    width: 100%;
+  }
+  .input-box input {
+    width: 80%;
+  }
+  .set {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .app {
+    grid-template-rows: 150px 600px;
+  }
+}
